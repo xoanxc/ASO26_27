@@ -39,7 +39,7 @@ print(division)
 valor1 = int(input("Introduce el valor 1: "))
 resultado = valor1 + 2
 print(resultado)
-"""""
+
 
 # 2 - Crea un programa que solicite dos valores por pantalla. Muestra el resultado de cada operación aritmética básica.
 
@@ -90,3 +90,82 @@ for valor in range(0,5):
     print(valor)
 
 
+import random as rd
+
+aleatorio = rd.randrange(0,100)
+
+print(aleatorio)
+
+import sys
+
+import os
+
+ruta = os.getcwd()
+print(ruta)
+
+os.mkdir("/home/iago/Documentos/nuevo")
+
+os.chmod("/home/iago/Documentos/nuevo", 0o777)
+
+os.chown("/home/iago/Documentos/nuevo", 0o777)
+
+import subprocess as sp
+
+sp.run(["ls", "/"])
+
+sp.run(["chmod", "777", "/home/iago/Documentos/nuevo"])
+
+sp.run(["chmod", "root:root", "/home/iago/Documentos/nuevo"])
+
+"""""
+
+lista = [1, 22, 333, 4444, 55555, 666666]
+
+print("--- Lista completa ---")
+print(lista)
+
+print("--- Posición mediante indices ---")
+print(lista[4])
+
+print("--- Tamaño de la lista ---")
+print(len(lista))
+
+print("--- Acceso parcial a la lista ---")
+print(lista[0:3])
+
+print("--- Modificar una posición de la lista ---")
+lista[0] = 0
+print(lista)
+
+print("--- Agregado de valores a la lista ---")
+lista.insert(0,1)
+print(lista)
+
+print("--- ")
+lista.insert(len(lista), 777777)
+print(lista)
+
+lista.append(88888888)
+print(lista)
+
+lista.remove(88888888)
+print(lista)
+
+lista.pop()
+print(lista)
+
+lista.pop(4)
+print(lista)
+
+del lista[3]
+print(lista)
+
+lista.clear()
+print(lista)
+
+print("--- Operaciones con listas ---")
+for valor in lista:
+    print(valor)
+
+for valor in range(len(lista)):
+    print(lista[valor])

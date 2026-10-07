@@ -7,6 +7,8 @@ for i in range(valor1, valor2 + 1):
     contador = 2
     while contador < i:
         resultado = i % contador
-        if resultado == 0 and contador != resultado;
+        if resultado == 0 and contador != resultado:
+            contador += 1 # Por ejemplo
+
 
 
