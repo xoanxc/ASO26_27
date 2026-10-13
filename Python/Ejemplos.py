@@ -169,3 +169,62 @@ for valor in lista:
 
 for valor in range(len(lista)):
     print(lista[valor])
+
+
+diccionario = {"clave":" valor"}
+
+print(diccionario)
+
+print(diccionario["clave"])
+
+diccionario["clave"] = "valorNuevo"
+print(diccionario["clave"])
+
+coches={"marca":"toyota",
+        "modelo":"auris",
+        "valocidadMax":200,
+        "CV":90,
+        "conductores":["Iago", "Carlos", "Ricardo"]}
+
+for coche in coches:
+    if coches[coche] == "toyota":
+        print("Hola")
+
+
+def sumar_valores(valor_1, valor_2):
+    resultado = valor_1 + valor_2
+    print("Resultado: " + str(resultado))
+
+entero_1 = 2
+entero_2 = 4
+
+sumar_valores(entero_1, entero_2)
+
+def sumar_valores(valor_1 = 5, valor_2 = 7):
+    resultado = valor_1 + valor_2
+    return resultado
+
+entero_1 = 2
+entero_2 = 4
+
+suma = sumar_valores(entero_1, entero_2)
+
+print("Resultado: " + str(suma))
+
+class Coche:
+    def __init__(self, marca = "citroen", modelo = "C3"):
+        self.m = marca
+        self.mo = modelo
+    def setMarca(self, marca):
+        self.m = marca
+
+    def getMarca(self):
+        return self.m
+
+
+import requests as req
+
+url = "https://ddragon.leagueoflegends.com/cdn/16.20.1/data/en_US/champion.json"
+
+respuesta = req.get(url)
+
