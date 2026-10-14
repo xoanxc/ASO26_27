@@ -1,0 +1,1 @@
+sudo sysctl -w net.ipv4.ip forward=1
